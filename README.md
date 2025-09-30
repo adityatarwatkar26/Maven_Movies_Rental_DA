@@ -53,3 +53,10 @@ The primary objective of this project is to practice SQL queries and demonstrate
 - Window Functions – RANK, DENSE_RANK, ROW_NUMBER
 
 - Data Analysis – Customer segmentation, revenue trends, genre analysis
+
+🚀<H1>Tools & Technologies</H1>
+
+Database: MySQL 
+
+Querying Language: SQL
+
