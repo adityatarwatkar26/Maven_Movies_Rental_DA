@@ -87,7 +87,21 @@ This repository contains SQL queries and corresponding visualizations for analyz
 
 Retrieve customer first name, last name, and email ID.
 
-<img width="615" height="329" alt="Screenshot 2025-09-30 150156" src="https://github.com/user-attachments/assets/c4bba104-6373-4838-8bd2-eada9ffd8551" />
+<img width="615" height="329" alt="Screenshot 2025-09-30 150156" src="https://github.com/user-attachments/assets/c4bba104-6373-4838-8bd2-eada9ffd8551" /> 
+
+### 2. Count of Movies with Rental Rate of $0.99
+
+<img width="600" height="80" alt="Screenshot 2025-09-30 150225" src="https://github.com/user-attachments/assets/2a1df82c-0cd0-471b-8467-20aca4cfa1d9" />
+
+### 3. Rental Rate Distribution and Movie Count
+
+<img width="451" height="118" alt="Screenshot 2025-09-30 150303" src="https://github.com/user-attachments/assets/818994b9-454a-4d3b-8af2-5aed4dc4aa9c" /> 
+
+### 4. Most Common Movie Rating
+
+<img width="447" height="163" alt="Screenshot 2025-09-30 150332" src="https://github.com/user-attachments/assets/b57e9a17-c83f-4973-9b1e-243ffbd4ed49" />
+
+
 
 
 
