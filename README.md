@@ -130,7 +130,8 @@ Retrieve customer first name, last name, and email ID.
 
 ### 12. Customers Eligible for Rewards
 
-<img width="735" height="373" alt="Screenshot 2025-09-30 152232" src="https://github.com/user-attachments/assets/8cdf4769-fcc6-4cd5-8d91-42d77600ff3c" />
+<img width="796" height="285" alt="Screenshot 2025-10-01 010709" src="https://github.com/user-attachments/assets/04fe0c1a-97ea-423b-944c-c73d0bfd2566" />
+
 
 ### 13. Payments from First 100 Customers
 
@@ -196,9 +197,19 @@ Retrieve customer first name, last name, and email ID.
 
 <img width="617" height="386" alt="Screenshot 2025-09-30 155113" src="https://github.com/user-attachments/assets/34d71713-d9af-499a-81c9-57c9c7edb221" />
 
-### 29. List of Customers favourite actors
+### 29. List of Customers Favourite Actors
 
 <img width="607" height="375" alt="Screenshot 2025-09-30 155312" src="https://github.com/user-attachments/assets/4310c342-44e0-4185-8714-b41d8b13b48a" />
+
+### 30. Films Available In Store 2
+
+<img width="638" height="375" alt="Screenshot 2025-09-30 155358" src="https://github.com/user-attachments/assets/e75c3920-2131-461d-ad58-c12ef5aa5919" />
+
+### 31. List of Staff and Advisors
+
+<img width="414" height="186" alt="Screenshot 2025-09-30 155452" src="https://github.com/user-attachments/assets/53274499-47ed-4e5b-b74e-be89eba8ffe5" />
+
+
 
 
 
