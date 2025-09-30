@@ -87,8 +87,8 @@ This repository contains SQL queries and corresponding visualizations for analyz
 
 Retrieve customer first name, last name, and email ID.
 
+<img width="615" height="329" alt="Screenshot 2025-09-30 150156" src="https://github.com/user-attachments/assets/c4bba104-6373-4838-8bd2-eada9ffd8551" />
 
-<img width="414" height="386" alt="Screenshot 2025-09-30 155452" src="https://github.com/user-attachments/assets/a6c320da-4246-4673-bf5a-9bb95c254fa5" />
 
 
 
