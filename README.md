@@ -60,6 +60,8 @@ Database: MySQL
 
 Querying Language: SQL
 
+MAVENMOVIES Database – Source of movie rental data
+
 ## 💰Revenue Enhancement
   Examine rental pricing trends to identify profitable pricing strategies.
   Determine the most rented movie categories and ratings to maximize earnings.
