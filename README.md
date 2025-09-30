@@ -75,6 +75,7 @@ MAVENMOVIES Database – Source of movie rental data
 - Seasonal trends show peak rentals during specific months.
 
 - High-value customers can be targeted for loyalty programs.
+  
 
 <H1>Movies Rental Data Queries</H1>
 
