@@ -6,21 +6,21 @@ The primary objective of this project is to practice SQL queries and demonstrate
 
  🗂️<H1>Dataset Description</H1>
 
-The Maven Movies dataset contains the following key tables:
+- The Maven Movies dataset contains the following key tables:
 
-Actor – List of all actors.
+- Actor – List of all actors.
 
-Film – Details of movies including title, release year, rating, and rental duration.
+- Film – Details of movies including title, release year, rating, and rental duration.
 
-Category – Genre/category of films.
+- Category – Genre/category of films.
 
-Customer – Information about customers who rented movies.
+- Customer – Information about customers who rented movies.
 
-Rental – Rental transactions and their timestamps.
+- Rental – Rental transactions and their timestamps.
 
-Payment – Payment records for rentals.
+- Payment – Payment records for rentals.
 
-Store & Staff – Information about stores and employees.
+- Store & Staff – Information about stores and employees.
 
 🎯<H1>Project Objectives</H1>
 
@@ -37,3 +37,19 @@ Store & Staff – Information about stores and employees.
 - Which genres generate the most revenue?
 
 - What is the rental frequency by month/year?
+
+🔍 <H1>SQL Concepts Covered</H1>
+
+- Basic Queries – SELECT, WHERE, ORDER BY, LIMIT
+
+- Filtering – LIKE, IN, BETWEEN, DISTINCT
+
+- Aggregations – COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING
+
+- Joins – INNER JOIN, LEFT JOIN, RIGHT JOIN
+
+- Subqueries – Nested queries for advanced filtering
+
+- Window Functions – RANK, DENSE_RANK, ROW_NUMBER
+
+- Data Analysis – Customer segmentation, revenue trends, genre analysis
