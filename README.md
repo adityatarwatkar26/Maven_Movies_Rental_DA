@@ -99,7 +99,138 @@ Retrieve customer first name, last name, and email ID.
 
 ### 4. Most Common Movie Rating
 
-<img width="447" height="163" alt="Screenshot 2025-09-30 150332" src="https://github.com/user-attachments/assets/b57e9a17-c83f-4973-9b1e-243ffbd4ed49" />
+<img width="447" height="163" alt="Screenshot 2025-09-30 150332" src="https://github.com/user-attachments/assets/b57e9a17-c83f-4973-9b1e-243ffbd4ed49" /> 
+
+### 5. Most Prevalent Rating per Store
+
+<img width="449" height="268" alt="Screenshot 2025-09-30 150359" src="https://github.com/user-attachments/assets/4d495e4a-a6c0-407e-8d26-cb2a915009c4" /> 
+
+### 6. List of Films by Name, Category, and Language
+
+<img width="606" height="372" alt="Screenshot 2025-09-30 150540" src="https://github.com/user-attachments/assets/056d3d15-801e-458e-8c56-1410f8e10461" /> 
+
+### 7. Movie Rental Frequency
+
+<img width="447" height="371" alt="Screenshot 2025-09-30 150608" src="https://github.com/user-attachments/assets/350df821-d30e-4089-8d56-65027f0f1a9d" /> 
+
+### 8. Top 10 Grossing Films
+<img width="448" height="277" alt="Screenshot 2025-09-30 151049" src="https://github.com/user-attachments/assets/370b20fb-260b-48cc-8892-edd26a159d50" /> 
+
+### 9. Highest Spending Customer
+
+<img width="611" height="79" alt="Screenshot 2025-09-30 151424" src="https://github.com/user-attachments/assets/49653068-4721-4f48-9575-dde9d922e1ac" /> 
+
+### 10. Store with Most Revenue
+
+<img width="620" height="110" alt="Screenshot 2025-09-30 151616" src="https://github.com/user-attachments/assets/541dcd66-86d0-42e0-8ca4-f75914738643" />
+
+### 11. Monthly Rentals Count
+
+<img width="498" height="170" alt="Screenshot 2025-09-30 151742" src="https://github.com/user-attachments/assets/f5ebeefb-0083-4c4c-9613-46549a55fe8c" />
+
+### 12. Customers Eligible for Rewards
+
+<img width="735" height="373" alt="Screenshot 2025-09-30 152232" src="https://github.com/user-attachments/assets/8cdf4769-fcc6-4cd5-8d91-42d77600ff3c" />
+
+### 13. Payments from First 100 Customers
+
+<img width="607" height="373" alt="Screenshot 2025-09-30 152356" src="https://github.com/user-attachments/assets/4be2e942-9b91-4a84-9f71-582b38be8d17" />
+
+### 14. Payments Over $5 Since Jan 1, 2006
+
+<img width="558" height="144" alt="Screenshot 2025-09-30 152428" src="https://github.com/user-attachments/assets/387048fe-b569-40b4-a7d1-d95f9a464a9e" />
+
+### 15. Payments Over $5 for Specific Customers
+
+<img width="602" height="373" alt="Screenshot 2025-09-30 152534" src="https://github.com/user-attachments/assets/33f304e6-54bc-4071-b6da-c59deba1ac46" />
+
+### 16. Films with 'Behind the Scenes' Special Feature
+
+<img width="597" height="375" alt="Screenshot 2025-09-30 152625" src="https://github.com/user-attachments/assets/8ae24f3a-c8af-4a57-bd3a-9d073240be14" />
+
+### 17. Unique Movie Ratings and Count
+
+<img width="361" height="170" alt="Screenshot 2025-09-30 152705" src="https://github.com/user-attachments/assets/d64a7272-a6c6-48dd-86de-e55666bb0ad3" />
+
+### 18. Titles Count by Rental Duration
+
+<img width="371" height="174" alt="Screenshot 2025-09-30 152759" src="https://github.com/user-attachments/assets/d49260d8-792d-44d4-b135-578fcb358319" />
+
+### 19. Ratings, Movie Count, Length, and Rental Duration
+
+<img width="862" height="171" alt="Screenshot 2025-09-30 152948" src="https://github.com/user-attachments/assets/fc5bf579-7d09-4487-a961-86f38f5d8b4b" />
+
+### 20. Film Count by Replacement Cost with Rental Rates
+
+<img width="764" height="376" alt="Screenshot 2025-09-30 153148" src="https://github.com/user-attachments/assets/17b74c31-06a8-46b8-b087-bc57c8b990bf" />
+
+### 21. Customers with Less Than 15 Rentals
+
+<img width="367" height="155" alt="Screenshot 2025-09-30 153216" src="https://github.com/user-attachments/assets/9758eedc-8d94-4929-aa98-9755ba505e93" /> 
+
+### 22. Longest Films Sorted by Length and Rental Rate
+
+<img width="450" height="372" alt="Screenshot 2025-09-30 153354" src="https://github.com/user-attachments/assets/7c75fd78-fcd9-4e86-b490-93302b7e4777" />
+
+### 23. Categorization of Movies by Length
+
+<img width="455" height="376" alt="Screenshot 2025-09-30 154834" src="https://github.com/user-attachments/assets/ca413e36-c62e-4a3a-8600-325e7430e22d" />
+
+### 24. Movie Recommendations by Age Group
+
+<img width="605" height="376" alt="Screenshot 2025-09-30 154444" src="https://github.com/user-attachments/assets/e2925f21-b4ac-4eb5-b9af-9779432d85ba" />
+
+### 25. Store Activity
+
+<img width="609" height="367" alt="Screenshot 2025-09-30 154815" src="https://github.com/user-attachments/assets/302c6d9d-42a9-40cb-b1fc-55fb2c9579f8" />
+
+### 26. Films Inventory List
+
+<img width="741" height="380" alt="Screenshot 2025-09-30 154951" src="https://github.com/user-attachments/assets/8478ec97-6fa2-4fc0-9386-05fdf258736c" />
+
+### 27. Actor Movie Count
+
+<img width="610" height="377" alt="Screenshot 2025-09-30 155039" src="https://github.com/user-attachments/assets/0a47c4f4-ad0b-4992-834c-15cd30263061" />
+
+### 28. Number of Actors per Film
+
+<img width="617" height="386" alt="Screenshot 2025-09-30 155113" src="https://github.com/user-attachments/assets/34d71713-d9af-499a-81c9-57c9c7edb221" />
+
+### 29. List of Customers favourite actors
+
+<img width="607" height="375" alt="Screenshot 2025-09-30 155312" src="https://github.com/user-attachments/assets/4310c342-44e0-4185-8714-b41d8b13b48a" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
