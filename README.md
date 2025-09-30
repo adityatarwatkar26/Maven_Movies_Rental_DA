@@ -66,13 +66,13 @@ Querying Language: SQL
 
 ## 📌Key Insights
 
-- �Action and Family genres are among the most rented categories.
+- Action and Family genres are among the most rented categories.
 
-- 🎬A small percentage of customers contribute to the majority of revenue.
+- A small percentage of customers contribute to the majority of revenue.
 
-- 💵Seasonal trends show peak rentals during specific months.
+- Seasonal trends show peak rentals during specific months.
 
-- �High-value customers can be targeted for loyalty programs.
+- High-value customers can be targeted for loyalty programs.
 
   
 
