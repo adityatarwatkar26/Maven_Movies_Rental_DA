@@ -21,3 +21,19 @@ Rental – Rental transactions and their timestamps.
 Payment – Payment records for rentals.
 
 Store & Staff – Information about stores and employees.
+
+🎯<H1>Project Objectives</H1>
+
+- Understand the database schema and relationships.
+
+- Write SQL queries for data extraction, cleaning, and transformation.
+
+- Answer business-related questions such as:
+
+- Which movies are most popular?
+
+- Who are the top customers based on spending?
+
+- Which genres generate the most revenue?
+
+- What is the rental frequency by month/year?
