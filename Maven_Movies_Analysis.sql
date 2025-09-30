@@ -1,3 +1,8 @@
+-- DATA ANALYSIS PROJECT FOR RENTAL MOVIES BUSINESS
+-- THE STEPS INVOLVED ARE EDA, UNDERSTANDING THR SCHEMA AND ANSWERING THE AD-HOC QUESTIONS
+-- BUSINESS QUESTIONS LIKE EXPANDING MOVIES COLLECTION AND FETCHING EMAIL IDS FOR MARKETING ARE INCLUDED
+-- HELPING COMPANY KEEP A TRACK OF INVENTORY AND HELP MANAGE IT.
+
 USE MAVENMOVIES;
 
 SELECT * FROM RENTAL;
@@ -11,31 +16,31 @@ SELECT * FROM FILM;
 
 SELECT * FROM CUSTOMER;
 
--- Q1: You need to provide customer firstname, lastname and email id to the marketing team --
+-- You need to provide customer firstname, lastname and email id to the marketing team --
 
 SELECT first_name,last_name,email
 FROM CUSTOMER;
 
--- Q2: How many movies are with rental rate of $0.99? --
+-- How many movies are with rental rate of $0.99? --
 
 SELECT count(*) as CHEAPEST_RENTALS
 FROM film
 WHERE rental_rate = 0.99;
 
--- Q3: We want to see rental rate and how many movies are in each rental category --
+-- We want to see rental rate and how many movies are in each rental category --
 
 select rental_rate,count(*) as total_numb_of_movies
 from film
 group by rental_rate;
 
--- Q4: Which rating has the most films? --
+-- Which rating has the most films? --
 
 SELECT RATING,COUNT(*) AS RATING_CATEGORY_COUNT
 FROM FILM
 GROUP BY RATING
 ORDER BY RATING_CATEGORY_COUNT DESC;
 
--- Q5: Which rating is most prevalant in each store? --
+-- Which rating is most prevalant in each store? --
 
 SELECT I.store_id,F.rating,COUNT(F.rating) AS TOTAL_FILMS
 FROM inventory AS I LEFT JOIN
@@ -44,7 +49,7 @@ ON I.film_id = F.film_id
 GROUP BY I.store_id,F.rating
 ORDER BY TOTAL_FILMS DESC;
 
--- Q6: List of films by Film Name, Category, Language --
+-- List of films by Film Name, Category, Language --
 
 SELECT F.TITLE, LANG.NAME AS LANGUAGE_NAME,C.NAME AS CATEGORY_NAME
 FROM FILM AS F LEFT JOIN LANGUAGE AS LANG
@@ -54,7 +59,7 @@ ON F.FILM_ID = FC.FILM_ID
 LEFT JOIN CATEGORY AS C
 ON FC.CATEGORY_ID = C.CATEGORY_ID;
 
--- Q7: How many times each movie has been rented out?
+-- How many times each movie has been rented out?
 
 SELECT F.TITLE, COUNT(R.RENTAL_ID) AS POPULARITY
 FROM RENTAL AS R LEFT JOIN INVENTORY AS INV
@@ -64,7 +69,7 @@ ON INV.FILM_ID = F.FILM_ID
 GROUP BY F.TITLE
 ORDER BY POPULARITY DESC;
 
--- Q8: REVENUE PER FILM (TOP 10 GROSSERS)
+-- REVENUE PER FILM (TOP 10 GROSSERS)
 
 SELECT RENTAL_ID_TRANSACTIONS.TITLE,SUM(P.AMOUNT) AS GROSS_REVENUE
 FROM(SELECT R.RENTAL_ID,F.FILM_ID,F.TITLE
@@ -81,7 +86,7 @@ LIMIT 10;
 
 SELECT * FROM PAYMENT;
 
--- Q9: Most Spending Customer so that we can send him/her rewards or debate points
+-- Most Spending Customer so that we can send him/her rewards or debate points
 
 
 SELECT P.CUSTOMER_ID,SUM(AMOUNT) AS SPENDING, C.FIRST_NAME,C.LAST_NAME
@@ -91,7 +96,7 @@ GROUP BY P.CUSTOMER_ID
 ORDER BY SPENDING DESC
 LIMIT 1;
 
--- Q10: Which Store has historically brought the most revenue?
+-- Which Store has historically brought the most revenue?
 
 
 SELECT ST.STORE_ID, SUM(P.AMOUNT) AS STORE_REVENUE
@@ -100,14 +105,14 @@ ON P.STAFF_ID = ST.STAFF_ID
 GROUP BY ST.STORE_ID
 ORDER BY STORE_REVENUE DESC;
 
--- Q11: How many rentals we have for each month
+-- How many rentals we have for each month
 
 SELECT MONTHNAME(RENTAL_DATE) AS MONTH_NAME,EXTRACT(YEAR FROM RENTAL_DATE) AS YEAR_NUMBR, COUNT(rental.rental_id) AS NUMBER_RENTALS
 FROM RENTAL
 GROUP BY EXTRACT(YEAR FROM RENTAL_DATE),MONTHNAME(RENTAL_DATE)
 ORDER BY NUMBER_RENTALS DESC;
 
--- Q12: Reward users who have rented at least 30 times (with details of customers)
+-- Reward users who have rented at least 30 times (with details of customers)
 
 SELECT C.CUSTOMER_ID,COUNT(RENTAL_ID) AS NUMBER_OF_RENTALS,C.FIRST_NAME,C.LAST_NAME,C.EMAIL
 FROM RENTAL AS R LEFT JOIN CUSTOMER C 
@@ -116,8 +121,8 @@ GROUP BY C.CUSTOMER_ID
 HAVING NUMBER_OF_RENTALS >=30
 ORDER BY CUSTOMER_ID DESC;
 
-
-
+-- Write a query to return the list of loyal customers (customers with the highest number of rentals) --
+-- greater than 30 --
 
 SELECT LOYAL_CUSTOMERS.CUSTOMER_ID,C.FIRST_NAME,C.LAST_NAME,C.EMAIL,AD.PHONE
 FROM (SELECT CUSTOMER_ID,COUNT(RENTAL_ID) AS NUMBER_OF_RENTALS
@@ -139,19 +144,19 @@ FROM FILM;
 
 
 
--- Q13: Could you pull all payments from our first 100 customers (based on customer ID)
+-- Could you pull all payments from our first 100 customers (based on customer ID)
 
 SELECT CUSTOMER_ID,RENTAL_ID,AMOUNT,PAYMENT_DATE
 FROM PAYMENT
 WHERE CUSTOMER_ID<101;
 
--- Q14: Now I’d love to see just payments over $5 for those same customers, since January 1, 2006
+-- Now I’d love to see just payments over $5 for those same customers, since January 1, 2006
 
 SELECT CUSTOMER_ID,RENTAL_ID,AMOUNT,PAYMENT_DATE
 FROM PAYMENT
 WHERE CUSTOMER_ID<101 AND AMOUNT > 5 AND PAYMENT_DATE> '2006-01-01';
 
--- Q15: Now, could you please write a query to pull all payments from those specific customers, along
+-- Now, could you please write a query to pull all payments from those specific customers, along
 -- with payments over $5, from any customer?
 
 SELECT CUSTOMER_ID,RENTAL_ID,AMOUNT,PAYMENT_DATE
@@ -163,7 +168,7 @@ FROM PAYMENT
 WHERE AMOUNT > 5 AND CUSTOMER_ID IN (42,53,60,75);
 
 
--- Q16: We need to understand the special features in our films. Could you pull a list of films which
+-- We need to understand the special features in our films. Could you pull a list of films which
 -- include a Behind the Scenes special feature?
 
 SELECT TITLE,SPECIAL_FEATURES
@@ -171,13 +176,13 @@ FROM FILM
 WHERE SPECIAL_FEATURES LIKE '%Behind the Scenes%';
 
 
--- Q17: unique movie ratings and number of movies
+-- Unique movie ratings and number of movies
 
 SELECT RATING,COUNT(FILM_ID) AS NUMBER_OF_FILMS
 FROM FILM
 GROUP BY RATING;
 
--- Q18: Could you please pull a count of titles sliced by rental duration?
+-- Could you please pull a count of titles sliced by rental duration?
 
 SELECT RENTAL_DURATION,COUNT(FILM_ID) AS NUMBER_OF_FILMS
 FROM FILM
@@ -188,7 +193,7 @@ SELECT RATING,RENTAL_DURATION,COUNT(FILM_ID) AS NUMBER_OF_FILMS
 FROM FILM
 GROUP BY RATING,RENTAL_DURATION;
 
--- Q19: RATING, COUNT_MOVIES,LENGTH OF MOVIES AND COMPARE WITH RENTAL DURATION
+-- RATING, COUNT_MOVIES,LENGTH OF MOVIES AND COMPARE WITH RENTAL DURATION
 
 SELECT RATING,
 	COUNT(FILM_ID)  AS COUNT_OF_FILMS,
@@ -201,7 +206,7 @@ GROUP BY RATING
 ORDER BY AVERAGE_FILM_LENGTH;
 
 
--- Q20: I’m wondering if we charge more for a rental when the replacement cost is higher.
+-- I’m wondering if we charge more for a rental when the replacement cost is higher.
 -- Can you help me pull a count of films, along with the average, min, and max rental rate,
 -- grouped by replacement cost?
 
@@ -215,7 +220,7 @@ FROM FILM
 GROUP BY REPLACEMENT_COST
 ORDER BY REPLACEMENT_COST;
 
--- Q21: “I’d like to talk to customers that have not rented much from us to understand if there is something
+-- “I’d like to talk to customers that have not rented much from us to understand if there is something
 -- we could be doing better. Could you pull a list of customer_ids with less than 15 rentals all-time?”
 
 SELECT CUSTOMER_ID,COUNT(*) AS TOTAL_RENTALS
@@ -223,7 +228,7 @@ FROM RENTAL
 GROUP BY CUSTOMER_ID
 HAVING TOTAL_RENTALS < 15;
 
--- Q22: “I’d like to see if our longest films also tend to be our most expensive rentals.
+-- “I’d like to see if our longest films also tend to be our most expensive rentals.
 -- Could you pull me a list of all film titles along with their lengths and rental rates, and sort them
 -- from longest to shortest?”
 
@@ -232,7 +237,7 @@ FROM FILM
 ORDER BY LENGTH DESC
 LIMIT 20;
 
--- Q23: CATEGORIZE MOVIES AS PER LENGTH
+-- CATEGORIZE MOVIES AS PER LENGTH
 
 SELECT TITLE,LENGTH,
 	CASE
@@ -247,7 +252,7 @@ SELECT *
 FROM CATEGORY;
 
 
--- Q24: CATEGORIZING MOVIES TO RECOMMEND VARIOUS AGE GROUPS AND DEMOGRAPHIC
+-- CATEGORIZING MOVIES TO RECOMMEND VARIOUS AGE GROUPS AND DEMOGRAPHIC
 
 SELECT DISTINCT TITLE,
 	CASE
@@ -262,7 +267,7 @@ FROM FILM;
 
 
 
--- Q25: “I’d like to know which store each customer goes to, and whether or
+-- “I’d like to know which store each customer goes to, and whether or
 -- not they are active. Could you pull a list of first and last names of all customers, and
 -- label them as either ‘store 1 active’, ‘store 1 inactive’, ‘store 2 active’, or ‘store 2 inactive’?”
 
@@ -277,7 +282,7 @@ SELECT CUSTOMER_ID,FIRST_NAME,LAST_NAME,
 FROM CUSTOMER;
 
 
--- Q26: “Can you pull for me a list of each film we have in inventory?
+-- “Can you pull for me a list of each film we have in inventory?
 -- I would like to see the film’s title, description, and the store_id value
 -- associated with each item, and its inventory_id. Thanks!”
 
@@ -287,7 +292,7 @@ SELECT DISTINCT INVENTORY.INVENTORY_ID,
                 FILM.DESCRIPTION 
 FROM FILM INNER JOIN INVENTORY ON FILM.FILM_ID = INVENTORY.FILM_ID;
 
--- Q27: Actor first_name, last_name and number of movies
+-- Actor first_name, last_name and number of movies
 
 SELECT * FROM FILM_ACTOR;
 SELECT * FROM ACTOR;
@@ -303,7 +308,7 @@ FROM ACTOR
 GROUP BY
 	ACTOR.ACTOR_ID;
 
--- Q28: “One of our investors is interested in the films we carry and how many actors are listed for each
+-- “One of our investors is interested in the films we carry and how many actors are listed for each
 -- film title. Can you pull a list of all titles, and figure out how many actors are
 -- associated with each title?”
 
@@ -315,7 +320,7 @@ FROM FILM
 GROUP BY 
 	FILM.TITLE;
     
--- Q29: “Customers often ask which films their favorite actors appear in. It would be great to have a list of
+-- “Customers often ask which films their favorite actors appear in. It would be great to have a list of
 -- all actors, with each title that they appear in. Could you please pull that for me?”
     
 SELECT ACTOR.FIRST_NAME,
@@ -329,7 +334,7 @@ ORDER BY
 ACTOR.LAST_NAME,
 ACTOR.FIRST_NAME;
 
--- Q30: “The Manager from Store 2 is working on expanding our film collection there.
+-- “The Manager from Store 2 is working on expanding our film collection there.
 -- Could you pull a list of distinct titles and their descriptions, currently available in inventory at store 2?”
 
 SELECT DISTINCT FILM.TITLE,
@@ -339,7 +344,7 @@ FROM FILM
 		ON FILM.FILM_ID = INVENTORY.FILM_ID
         AND INVENTORY.STORE_ID = 2;
 
--- Q31: “We will be hosting a meeting with all of our staff and advisors soon. Could you pull one list of all staff
+-- “We will be hosting a meeting with all of our staff and advisors soon. Could you pull one list of all staff
 -- and advisor names, and include a column noting whether they are a staff member or advisor? Thanks!”
 
 SELECT * FROM STAFF;
