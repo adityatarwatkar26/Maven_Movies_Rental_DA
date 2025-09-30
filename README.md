@@ -76,7 +76,7 @@ MAVENMOVIES Database – Source of movie rental data
 
 - High-value customers can be targeted for loyalty programs.
 
-## Movies Rental Data Queries
+<H1>Movies Rental Data Queries</H1>
 
   
 
