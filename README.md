@@ -83,7 +83,7 @@ This repository contains SQL queries and corresponding visualizations for analyz
 
 ## Queries and Visualizations
 
-1. Customer Information for Marketing Team
+# 1. Customer Information for Marketing Team
 
 Retrieve customer first name, last name, and email ID.
 
