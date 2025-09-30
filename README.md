@@ -79,6 +79,14 @@ MAVENMOVIES Database – Source of movie rental data
 
 <H1>Movies Rental Data Queries</H1>
 
+This repository contains SQL queries and corresponding visualizations for analyzing the Movies Rental dataset.
+
+## Queries and Visualizations
+
+1. Customer Information for Marketing Team
+Retrieve customer first name, last name, and email ID.
+
+
   
 
 
