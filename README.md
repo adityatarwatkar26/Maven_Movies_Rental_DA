@@ -178,7 +178,7 @@ Retrieve customer first name, last name, and email ID.
 
 ### 24. Categorization of Movies by Length
 
-<img width="455" height="376" alt="Screenshot 2025-09-30 154834" src="https://github.com/user-attachments/assets/ca413e36-c62e-4a3a-8600-325e7430e22d" />
+<img width="449" height="291" alt="Screenshot 2025-10-01 142654" src="https://github.com/user-attachments/assets/1ada3124-3167-49bc-9d91-fef95c9fd904" />
 
 ### 25. Movie Recommendations by Age Group
 
