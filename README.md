@@ -1,6 +1,7 @@
 # Maven_Movies : Unlocking The Insights For Rental Business
 
-<img width="1536" height="1024" alt="Maven_Movies_image" src="https://github.com/user-attachments/assets/ff7520f5-ae8e-4dbc-8195-b7cc063eecfd" />
+![WhatsApp Image 2025-10-01 at 21 50 17_224013b8](https://github.com/user-attachments/assets/19693b9e-c3ff-4498-960d-1bc7d7c8209c)
+
 
 <h1>📌Project Overview</h1>
 
