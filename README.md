@@ -1,4 +1,7 @@
 # Maven_Movies_Rental_DA
+
+<img width="1536" height="1024" alt="Maven_Movies_image" src="https://github.com/user-attachments/assets/ff7520f5-ae8e-4dbc-8195-b7cc063eecfd" />
+
 ## 📌Project Overview
 
 This project explores the Maven Movies dataset using SQL to analyze and generate insights from a movie rental database. The dataset simulates a DVD rental store and includes information about customers, films, actors, rentals, payments, and staff.
