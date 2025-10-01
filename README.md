@@ -1,4 +1,4 @@
-# Maven_Movies_Rental_DA
+# Maven_Movies : Unlocking The Insights For Rental Business
 
 <img width="1536" height="1024" alt="Maven_Movies_image" src="https://github.com/user-attachments/assets/ff7520f5-ae8e-4dbc-8195-b7cc063eecfd" />
 
