@@ -190,7 +190,7 @@ Retrieve customer first name, last name, and email ID.
 
 ### 27. Films Inventory List
 
-<img width="741" height="380" alt="Screenshot 2025-09-30 154951" src="https://github.com/user-attachments/assets/8478ec97-6fa2-4fc0-9386-05fdf258736c" />
+<img width="712" height="293" alt="Screenshot 2025-10-01 142919" src="https://github.com/user-attachments/assets/aea5237a-9253-428f-8653-a0b1b02a0606" />
 
 ### 28. Actor Movie Count
 
