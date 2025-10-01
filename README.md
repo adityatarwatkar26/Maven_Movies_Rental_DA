@@ -202,7 +202,8 @@ Retrieve customer first name, last name, and email ID.
 
 ### 30. List of Customers Favourite Actors
 
-<img width="607" height="375" alt="Screenshot 2025-09-30 155312" src="https://github.com/user-attachments/assets/4310c342-44e0-4185-8714-b41d8b13b48a" />
+<img width="449" height="291" alt="Screenshot 2025-10-01 143430" src="https://github.com/user-attachments/assets/f26ab494-8a74-41e7-a897-be682ef9f59f" />
+
 
 ### 31. Films Available In Store 2
 
